@@ -1,0 +1,174 @@
+/*Media Queries*/
+
+@media only screen and (min-width: 320px) {
+  /*Logo*/
+  .logoImg {
+    margin-bottom: 20px;
+  }
+
+  //INDEX-----------------------------------------------------------------------------------------
+  .sectionIndex {
+    height: 6vh;
+    width: 60vw;
+  }
+  .line-1 {
+    width: 19em;
+    font-size: 1.3em;
+  }
+
+  //Botón de reservar
+  .btn-light {
+    margin: 0 0 10px 10px;
+  }
+
+  //RESERVATION----------------------------------------------------------------------------------
+
+  //título dentro del header
+  .header-title {
+    font-size: 2.6em;
+    text-align: center;
+  }
+
+  .formulaire {
+    margin-top: 20px;
+  }
+
+  .alert {
+    width: 30vw;
+    padding: 10px;
+  }
+
+  /*Observatoire*/
+
+  //mapas imágenes
+  .mapa {
+    width: 85vw;
+    height: auto;
+  }
+
+  //título de los headers grandes - observatory y hébergement
+  .header-title-large {
+    font-size: 2.5em;
+  }
+  .header-title {
+    font-size: 4em;
+  }
+  //header container
+  .second {
+    height: 40vh;
+  }
+
+  //subtítulos
+  .subtitle {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  /*INDEX*/
+  .sectionIndex {
+    height: 8vh;
+    width: 60vw;
+  }
+  .line-1 {
+    width: 19em;
+    font-size: 180%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*INDEX*/
+  .sectionIndex {
+    height: 8vh;
+    width: 40vw;
+  }
+  .line-1 {
+    width: 19em;
+    font-size: 200%;
+  }
+
+  .formulaire {
+    margin: 20px;
+  }
+
+  //Botón de reservar
+  .btn-light {
+    margin: 0 0 15px 5px;
+  }
+  //Título de los headers grandes
+  .header-title-large {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /*INDEX*/
+  .sectionIndex {
+    height: 8vh;
+    width: 35vw;
+  }
+  .line-1 {
+    width: 19em;
+    font-size: 220%;
+  }
+
+  //Título de los headers grandes
+
+  .header-title-large {
+    font-size: 4em;
+  }
+
+  .formulaire {
+    margin: 40px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  /*INDEX*/
+  .sectionIndex {
+    height: 8vh;
+    width: 40vw;
+  }
+  .line-1 {
+    width: 19em;
+    font-size: 240%;
+  }
+
+  // Reservation
+  .formulaire {
+    width: 30vw;
+  }
+
+  .card-tarifa {
+    width: 60vw;
+  }
+
+  //título dentro del header
+  .header-title {
+    font-size: 4em;
+  }
+
+  /*Observatory*/
+
+  //mapas imágenes
+  .mapa {
+    width: 30vw;
+    height: 45vh;
+  }
+  //headers
+  .second {
+    height: 40vh;
+  }
+
+  //subtítulos
+  .subtitle {
+    font-size: 3.7em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /*INDEX*/
+  .sectionIndex {
+    height: 10vh;
+    width: 27vw;
+  }
+}

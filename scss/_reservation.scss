@@ -1,0 +1,99 @@
+.reservation-image {
+  background-image: url(../images/queyras.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.tel {
+  font-size: 1.7rem;
+  font-weight: $f-w7;
+  text-shadow: 2px 2px #d4caba;
+}
+
+//Recuadro izquiero
+
+.formulaire {
+  opacity: 1;
+  border: 2px solid rgb(243, 235, 235);
+  border-radius: 15px;
+  box-shadow: 5px 10px #d3c9c9;
+  margin: 60px;
+}
+
+.title {
+  font-size: 1.7em;
+}
+
+//Recuadro derecho
+.card-tarifa {
+  height: auto;
+  background-image: linear-gradient(
+    to right top,
+    #f9ae04,
+    #f9a004,
+    #f89109,
+    #f68211,
+    #f37318,
+    #f2721c,
+    #f27020,
+    #f16f24,
+    #f37b28,
+    #f5862c,
+    #f69132,
+    #f89b38
+  );
+  box-shadow: 5px 10px #888888;
+  font-size: 0.05em;
+}
+
+//Borde que rodea a los títulos
+
+.etiqueta {
+  border: 2px solid rgb(243, 235, 235);
+  padding: 3px 10px;
+  border-radius: 25px;
+}
+
+//Casillero donde va el número de personas
+
+.form-option {
+  width: 30%;
+  display: inline;
+}
+
+.carousel-item {
+  transition: transform 0.1s ease !important;
+}
+
+//Mensaje amarillo de Alert
+
+.alert {
+  width: auto;
+  font-size: 0.8rem;
+  background-image: linear-gradient(
+    to right top,
+    #f9ae04,
+    #f9a004,
+    #f89109,
+    #f68211,
+    #f37318,
+    #f2721c,
+    #f27020,
+    #f16f24,
+    #f37b28,
+    #f5862c,
+    #f69132,
+    #f89b38
+  );
+}
+
+.list li {
+  display: block;
+}
+
+.title-tarifa {
+  color: #ff8516;
+  font-size: 2rem;
+  font-weight: $f-w7;
+}

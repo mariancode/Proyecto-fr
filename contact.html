@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire de contact des Nuits de l'observatoire">
+    <meta name="author" content="Sint Verán observatoire" />
+    <title>Refuge Saint Verán</title>
+    <link rel="icon" href="./images/telescope.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/bb76bef763.js" crossorigin="anonymous"></script>
+    <!--mi css-->
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <a href="./images/telescope 2.png" class="px-5"></a>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark px-md-2 py-md-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/telescope22.png" alt="logo image" class="logoImg pt-2 ml-2">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Le refuge
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item " href="hiver.html">Hiver</a></li>
+                                <li><a class="dropdown-item" href="error.html">Été</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tarifs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="hebergement.html">Hébergement</a></li>
+                                <li><a class="dropdown-item" href="reservation.html">Reservation</a></li>
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Observatoire
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="observatory.html">Observatoire</a></li>
+                                <li><a class="dropdown-item" href="programme.html">Programme</a></li>
+                                <li><a class="dropdown-item" href="maison.html">Maison du Soleil</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="reservation.html" class="btn btn-light" role="button" aria-disabled="true">Reserver</a>
+        </nav>
+        <div class="contact w-100 d-flex justify-content-center align-items-end">
+            <h1 class="header-title-large">CONTACT</h1>
+        </div>
+    </header>
+
+
+
+    <section class="container bg-light my-5 ">
+        <div class="row">
+            <!--Formulario-->
+            <div class=" col-md-6">
+                <form class="row g-3 px-5 text-dark form">
+                    <div class="col-lg-12">
+                        <label for="form-label" class="form-label mt-5 ">Prénom</label>
+                        <input type="text" class="form-control w-100" id="inputName" placeholder="John">
+                    </div>
+                    <div class="col-lg-12 ">
+                        <label for="form-label" class="form-label">Nom</label>
+                        <input type="text" class="form-control w-100" id="inputlname" placeholder="Deep">
+                    </div>
+                    <div class="col-lg-12">
+                        <label for="inputEmail4" class="form-label">E-mail</label>
+                        <input type="email" class="form-control w-100" id="inputEmail4"
+                            placeholder="johndeep@gmail.com">
+                    </div>
+                    <div class="col-lg-12 ">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control w-100 " id="validationTextarea" placeholder=""></textarea>
+                    </div>
+                    <div class="col-lg-12 my-5 d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary w-50 ">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+                <img src="./images/astronomer2.svg" alt="" class="foto">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--badge-->
+    <div class=" py-3 mb-3 mr-5">
+        <button type="button" class="btn-news btn-danger "><a href="error.html"
+                class="text-light text-decoration-none px-1">covid-19</a>
+        </button>
+    </div>
+
+    <!-- fin de badge-->
+    <!-- Footer -->
+    <footer class="">
+        <!-- Section: Social media -->
+        <section class="footer1 d-flex justify-content-center">
+            <div class="social pt-3 pb-0">
+                <ul>
+                    <li><a class="facebook" href="#"></a></li>
+                    <li><a class="twitter" href="#"></a></li>
+                    <li><a class="instagram" href="#"></a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="footer2 text-light">
+            <div class="pt-3 text-center text-md-start">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Saint Verán
+                        </h6>
+                        <img src="./images/saintveran.png" alt="logo Saint Verán">
+                    </div>
+                    <!-- Grid column -->
+
+
+                    <!-- Grid column -->
+                    <div class=" pfoot col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Liens utiles
+                        </h6>
+                        <p>
+                            <a href="faq.html" class="text-reset">FAQ</a>
+                        </p>
+                        <p>
+                            <a href="error.html" class="text-reset">Emploi</a>
+                        </p>
+                        <p>
+                            <a href="error.html" class="text-reset">Mentions légales</a>
+                        </p>
+                        <p>
+                            <a href="error.html" class="text-reset">Conditions générales de vente</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class=" pfoot col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home"></i>
+                            Maison du Soleil
+                            Le Bouticari - Le Châtelet
+                            05350 Saint-Véran</p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone"></i> + 06 234 567 88</p>
+                        <p><i class="fas fa-print"></i> + 06 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright. Saint-Véran Culture Développement - Tous droits réservés
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

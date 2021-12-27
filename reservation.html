@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Réservez votre nuit en ligne">
+  <title>Refuge Saint Verán</title>
+  <link rel="icon" href="./images/telescope.png">
+
+  <!--animaciín link aos-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/bb76bef763.js" crossorigin="anonymous"></script>
+  <!--mi css-->
+  <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+  <header>
+    <a href="./images/telescope 2.png" class="px-5"></a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark px-md-2 py-md-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/telescope22.png" alt="logo image" class="logoImg pt-2 ml-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Le refuge
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item " href="hiver.html">Hiver</a></li>
+                <li><a class="dropdown-item" href="error.html">Été</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Tarifs
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="hebergement.html">Hébergement</a></li>
+                <li><a class="dropdown-item" href="reservation.html">Reservation</a></li>
+                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Observatoire
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="observatory.html">Observatoire</a></li>
+                <li><a class="dropdown-item" href="programme.html">Programme</a></li>
+                <li><a class="dropdown-item" href="maison.html">Maison du Soleil</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="reservation.html" class="btn btn-light" role="button" aria-disabled="true">Réserver</a>
+    </nav>
+    <div class="second w-100 d-flex justify-content-center align-items-end">
+      <h1 class="header-title-large">RESERVATION</h1>
+    </div>
+  </header>
+
+  <!-- fin de nav -->
+  <!-- Main -->
+
+  <body>
+    <section class="container-fluid">
+      <div class="row  d-flex p-4">
+        <div class="col-lg-4 mx-3 ">
+          <img src="./images/imagelogo.webp" alt="saint veran logo" class="logo-gris">
+        </div>
+        <div class="tel col-lg-7 mt-2 mx-2 text-end">
+          <i class="fas fa-mobile-alt fa-3x " data-aos="fade-left"></i>+ 06 234 567 88
+        </div>
+      </div>
+    </section>
+    <!--Cuadro reservation-->
+    <section class="reservation-image w-100">
+      <div class="d-flex justify-content-end ">
+        <div class="formulaire">
+          <div class=" my-5 text-white fw-bold text-center title ">Votre séjour au Saint Verán
+          </div>
+          <div class="d-flex justify-content-start">
+            <form method="get" action="/fr/reservation/online_affiche.php">
+              <div>
+
+                <label class="etiqueta m-3 fw-bold text-white">Début du séjour</label>
+                <input id="date_debut" name="DteFrom" type="date" class="m-2 input_text" value=""
+                  placeholder="jj/mm/aaaa" title="Début du séjour">
+              </div>
+              <div>
+                <label class="etiqueta  m-3 fw-bold text-white">Date de retour</label>
+                <input id="date_fin" name="" type="date" class=" m-2 input_text" value="" placeholder="jj/mm/aaaa"
+                  title="Date de retour">
+                <input id="nb_nuits" type="hidden" name="NbNuits" value="7">
+              </div>
+              <div>
+                <div class="form-group">
+                  <label class="etiqueta my-3 mx-5 fw-bold text-white" for="exampleFormControlSelect1">Personnes</label>
+                  <select class="form-option m-2" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="d-flex justify-content-center">
+            <input class="btn btn-lg btn-outline-info my-5" type="submit" value="Reserver">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class=" container-fluid justify-content-start ">
+      <div class="row">
+        <div class="col-md-6 p-3 shadow  m-5 p-3 mb-5 bg-white rounded">
+          <h2 class="title-tarifa ">Tarifs 2021/2022</h2>
+          <hr>
+          <div class=" text-secondary mt-3">
+            <h6>La prestation "Nuits découverte du ciel" comprend:</h6>
+            <ul class="list">
+              <li><i class="fas fa-meteor"></i> L’animation astronomique.</li>
+              <li><i class="fas fa-meteor"></i> Le séjour d’une nuit à l’observatoire de Saint-Véran - Paul Felenbok.
+              </li>
+              <li><i class="fas fa-meteor"></i> Le petit-déjeuner.</li>
+            </ul>
+            <h6 class="">Restent à la charge des visiteurs:</h6>
+            <ul class="list">
+              <li><i class="fas fa-meteor"></i> L’accès à l’Observatoire (aller et retour).</li>
+              <li><i class="fas fa-meteor"></i> Le repas du soir (pique-nique tiré du sac).</li>
+            </ul>
+          </div>
+          <div class="offset-lg-5 ">
+            <div class="alert p-2 text-light" data-aos="fade-up">
+              <h5>Période Hiver 2021/2022 </h5>
+              <hr>
+              <p>(Adulte uniquement) - Les mineurs même accompagnés ne sont pas acceptés si l'accès à l'observatoire
+                doit se
+                pratiquer sur la neige (à pieds, raquettes ou skis)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 gx-0 mt-5">
+          <img src="./images/p3.jpg" alt="personas en el atardecer" class=" w-100">
+
+        </div>
+      </div>
+    </main>
+
+    <section class="container-fluid mx-3 my-5">
+      <div class="row">
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/saintveran7.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/saintveran14.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/saintveran10.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/saintveran15.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/saintveran13.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/saintveran11.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/saintveran12.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/SaintVeran1.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/saintveran10.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/saintveran8.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/SaintVeran3.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/SaintVeran4.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/SaintVeran6.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/SaintVeran2.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/SaintVeran5.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-sm-4">
+          <div class="card">
+            <img src="./images/saintveran16.jpg" class="card-img-top w-100" alt="Saint Verán">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="">
+      <!-- Section: Social media -->
+      <section class="footer1 d-flex justify-content-center">
+        <div class="social pt-3 pb-0">
+          <ul>
+            <li><a class="facebook" href="#"></a></li>
+            <li><a class="twitter" href="#"></a></li>
+            <li><a class="instagram" href="#"></a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="footer2 text-light">
+        <div class="pt-3 text-center text-md-start">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Saint Verán
+              </h6>
+              <img src="./images/saintveran.png" alt="logo Saint Verán">
+            </div>
+            <!-- Grid column -->
+
+
+            <!-- Grid column -->
+            <div class=" pfoot col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Liens utiles
+              </h6>
+              <p>
+                <a href="faq.html" class="text-reset">FAQ</a>
+              </p>
+              <p>
+                <a href="error.html" class="text-reset">Emploi</a>
+              </p>
+              <p>
+                <a href="error.html" class="text-reset">Mentions légales</a>
+              </p>
+              <p>
+                <a href="error.html" class="text-reset">Conditions générales de vente</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class=" pfoot col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Contact
+              </h6>
+              <p><i class="fas fa-home"></i>
+                Maison du Soleil
+                Le Bouticari - Le Châtelet
+                05350 Saint-Véran</p>
+              <p>
+                <i class="fas fa-envelope"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone"></i> + 06 234 567 88</p>
+              <p><i class="fas fa-print"></i> + 06 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright. Saint-Véran Culture Développement - Tous droits réservés
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <!-- Aos script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+
+</html>
